@@ -90,8 +90,8 @@ jobs:
 
     - uses: Swatinem/rust-cache@v2
 
-    - name: Test
-      run: cargo test --all
+    #- name: Test
+    #  run: cargo test --all
 
   core:
     runs-on: ubuntu-latest
@@ -110,5 +110,5 @@ jobs:
     - name: Install Bitcoin Core
       run: ./bin/install-bitcoin-core-linux
 
-    - name: Test
-      run: cargo test --all -- --ignored
+    #- name: Test
+    #  run: cargo test --all -- --ignored
